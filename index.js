@@ -42,8 +42,8 @@ app.post('/player/validate/close', function (req, res) {
     res.send('<script>window.close();</script>');
 });
 
-app.get('/', (req, res) => {
-    res.sendFile('/dashboard.html');
+app.post('/', (req, res) => {
+    res.sendFile(__dirname + '/dashboard.html');
 });
 
 app.listen(443, function () {
