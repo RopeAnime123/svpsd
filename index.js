@@ -43,7 +43,7 @@ app.post('/player/validate/close', function (req, res) {
 });
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/dashboard.html');
+    res.sendFile('/dashboard.html');
 });
 
 app.listen(443, function () {
