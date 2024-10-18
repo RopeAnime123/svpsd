@@ -42,7 +42,7 @@ app.post('/player/validate/close', function (req, res) {
     res.send('<script>window.close();</script>');
 });
 
-app.post('/', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(__dirname + '/dashboard.html');
 });
 
